@@ -121,15 +121,6 @@ The app will open in your browser (usually at `http://localhost:8501`).
 3. Select the programming languages and frameworks you know
 4. Hit **Predict** to see your estimated yearly salary in USD
 
-
-
-## 👤 Author
-
-**Yousef Mohamed**
-GitHub: [@YousefMohamed101](https://github.com/YousefMohamed101)
-
----
-
 ## 📄 License
 
 This project is available for personal and educational use. Add a license of your choice (e.g. MIT) if you plan to open it up for reuse.

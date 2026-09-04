@@ -75,8 +75,6 @@ All models were evaluated on the same held-out test set using R², Mean Absolute
 - The **bagged Random Forest baseline** (XGBRFRegressor) trailed behind at R² = 0.85 — expected, since bagging tends to underperform sequential boosting on structured/tabular regression tasks like this one.
 - **CatBoost** was selected as the production model. With comparable accuracy to XGBoost and LightGBM, it needed the fewest boosting iterations to converge (stopped automatically at iteration 128 via its overfitting detector) and required the least manual tuning to reach peak performance — making it the most practical choice to ship.
 
-> 📓 Full training code, logs, and metrics are in [`SalaryPredictor.ipynb`](./SalaryPredictor.ipynb).
-
 ### 4. Deployment
 
 The trained CatBoost model is serialized with `joblib` and loaded directly by the Streamlit app (`App.py`). At inference time, the app:
